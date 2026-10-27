@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images and Media</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Images and Media</h1>
+        <p>Learn how to add images, audio, and video to webpages using HTML.</p>
+    </header>
+
+
+<main>
+    <section>
+        <h2>1. Images</h2>
+        <p>Images are added to webpages using the &lt;img&gt; element, which requires a source (src) attribute and an alternative text (alt) attribute.</p>
+        <pre>
+            <code>
+                &lt;img src="../media/photo.jpg" alt="A greyscale image of a tree with sun shining behind it."&gt;
+            </code>
+        </pre>  
+        <p><img src="../media/photo.jpg" alt="A greyscale image of a tree with sun shining behind it."></p>
+
+    </section>
+
+    <section>
+        <h2>2. Audio and Video</h2>
+        <p>Audio and video can be embedded using the &lt;audio controls&gt; and &lt;video controls&gt; elements, respectively. Both elements support multiple source formats for compatibility.</p>
+        <pre>
+            <code>
+                &lt;audio controls&gt;
+                    &lt;source src="../media/audio.mp3" type="audio/mpeg"&gt;
+                &lt;/audio&gt;
+
+                &lt;video controls&gt;
+                    &lt;source src="../media/video.mp4" type="video/mp4"&gt;
+                &lt;/video&gt;
+            </code>
+        </pre>
+        <p><audio controls>
+            <source src="../media/audio.mp3" type="audio/mpeg">
+        </audio></p>
+        <p><video controls>
+            <source src="../media/video.mp4" type="video/mp4">
+        </video></p>
+
+    </section>
+
+    <section>
+        <h2>3. Accessibility</h2>
+        <p>Accessibility means designing webpages so that people with different needs can use them.</p>
+
+        <h3>Alternative Text</h3>
+        <p>The alt attribute describes an image for people using screen readers and provides text if the image cannot load.</p>
+        <h3>Captions and Transcripts</h3>
+        <p>Captions display spoken dialogue and relevant sounds in videos, helping people who are deaf or hard of hearing. Transcripts provide a written version of audio content. This is often done via &lt;track&gt; along with .vtt files.</p>
+
+    </section>
+</main>
+
+<footer>
+    <p>HTML Revision Guide - Images and Media</p>
+    <a href="../index.html">Back to homepage</a>
+</footer>
+
+
+</body>
+</html>

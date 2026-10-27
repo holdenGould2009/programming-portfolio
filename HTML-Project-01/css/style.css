@@ -1,0 +1,41 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1
+{
+    color: darkblue;
+}
+h2
+{
+    color: steelblue;
+}
+a
+{
+    color: darkred;
+}
+header, main, footer
+{
+    margin-bottom: 30px;
+}
+section
+{
+    padding:15px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+.featured
+{
+    background-color: lightyellow;
+}
+img
+{
+    width: 300px;
+}
+video
+{
+    width: 400px;
+}

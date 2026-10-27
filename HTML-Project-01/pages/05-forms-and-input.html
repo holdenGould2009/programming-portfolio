@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+        <p>Learn how to create and manage forms for user input on a webpage using HTML.</p>
+    </header>
+
+
+<main>
+    <section>
+        <h2>1. Form Basics</h2>
+        <p>A form allows users to enter information into a webpage. The &lt;form&gt; element groups the inputs together, while &lt;label&gt; describes each input and &lt;input&gt; lets the user enter data.</p>
+        <h3>Basic Form Example</h3>
+        <pre>
+            <code> 
+                &lt;form&gt; 
+                    &lt;label for="username"&gt;Username:&lt;/label&gt;
+                    &lt;input type="text" id="username" name="username"&gt; 
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt; 
+            </code>
+        </pre>
+
+        <h3>Try It Yourself</h3>
+
+        <form> 
+            <label for="username">Username:</label> 
+            <input type="text" id="username" name="username"> 
+            <button type="submit">Submit</button> 
+        </form>
+
+    </section>
+
+    <section>
+        <h2>2. Input Types</h2>
+        <p>The type attribute determines what kind of input field is displayed. Different types are designed for different kinds of information.</p>
+        <h3>Common Input Types</h3>
+        <ul>
+            <li><strong>text:</strong> For single-line text input.</li>
+            <li><strong>email:</strong> For email address input with validation.</li>
+            <li><strong>password:</strong> For password input with masking.</li>
+            <li><strong>number:</strong> For numeric input with validation.</li>
+            <li><strong>date:</strong> For date input with a calendar picker.</li>
+            <li><strong>checkbox:</strong> For selecting one or more options.</li>
+            <li><strong>radio:</strong> For selecting one option from a group.</li>
+            <li><strong>submit:</strong> For submitting the form.</li>
+        </ul>
+        <h3>Code Examples</h3>
+        <pre>
+            <code>
+                &lt;input type="text" name="username"&gt;
+                &lt;input type="email" name="email"&gt;
+                &lt;input type="password" name="password"&gt;
+                &lt;input type="number" name="age"&gt;
+                &lt;input type="date" name="dob"&gt;
+                &lt;input type="checkbox" name="subscribe"&gt; Subscribe
+                &lt;input type="radio" name="gender" value="male"&gt; Male
+                &lt;input type="radio" name="gender" value="female"&gt; Female
+                &lt;input type="radio" name="gender" value="other"&gt; Other
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            </code>
+            <h3>Try It Yourself</h3>
+            <form>
+                <input type="text" id="username" name="username">
+                <input type="email" id="email" name="email">
+                <input type="password" id="password" name="password">
+                <br><br>
+                <input type="number" id="age" name="age">
+                <input type="date" id="dateofbirth" name="dateofbirth">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to Emails</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    <section>
+        <h2>3. Validation and Accessibility</h2>
+        <p>HTML provides attributes that help ensure users enter appropriate information. Accessibility features also make forms easier to understand and use.</p>
+        <h3>Form Validation</h3>
+        <p>The required attribute prevents a form from being submitted until a field has been filled in. Input types such as email also provide basic validation.</p>
+
+    <pre>
+        <code> 
+            &lt;form&gt; 
+                &lt;label for="email-address"&gt;Email:&lt;/label&gt; 
+                &lt;input type="email" id="email-address" name="email" required&gt; 
+                &lt;button type="submit"&gt;Submit&lt;/button&gt; 
+            &lt;/form&gt; 
+        </code>
+    </pre>
+
+    <h3>Accessibility Features</h3>
+    <p>Labels help users understand what information belongs in each field. Connecting a label to an input using the for and id attributes also allows users to click the label to focus the input.</p>
+    <p>Use clear labels, suitable input types and required fields where necessary. Do not rely on placeholder text alone to describe an input.</p>
+    <h3>Try It Yourself</h3>
+    <form> 
+        <label for="email-address">Email:</label> 
+        <input type="email" id="email-address" name="email" required> 
+        <button type="submit">Submit</button>
+    </section>
+</main>
+
+<footer>
+    <p>HTML Revision Guide - Forms</p>
+    <a href="../index.html">Back to homepage</a>
+</footer>
+
+
+</body>
+</html>

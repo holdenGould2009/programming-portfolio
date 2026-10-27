@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Navigation</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Links and Navigation</h1>
+        <p>Learn how to connect webpages and navigate between sections using HTML.</p>
+    </header>
+
+    <main>
+
+        <section>
+                <h2>1. Hyperlinks and File Paths</h2>
+                <p>Hyperlinks are used to connect different webpages or sections within the same page.</p>
+                <pre>
+                    <code>
+                        &lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
+                    </code>
+                </pre>
+                <p><a href="https://www.example.com">Visit Example Website</a></p>
+
+                <p>To link to different sections within the same website, using ".." escapes the folder and navigates to the parent directory.</p>
+                <pre>
+                    <code>
+                        &lt;a href="../index.html"&gt;Go to Main Page&lt;/a&gt;
+                    </code>
+                </pre>
+                <p><a href="../index.html">Go to Main Page</a></p>
+
+        </section>
+        <section>
+                <h2>3. Navigation</h2>
+                <p>Using an element's ID with a # in a link allows users to jump directly to a specific section of the same page.</p>
+
+                <pre>
+                    <code>
+                        &lt;a href="#about"&gt;Go to About&lt;/a&gt;
+                        &lt;br&gt; (repeated to demonstrate scrolling)
+                        &lt;section id="about"&gt;
+                            &lt;h3&gt;About&lt;/h3&gt;
+                            &lt;p&gt;This is the About section.&lt;/p&gt;
+                        &lt;/section&gt;
+                    </code>
+                </pre>
+
+                <p><a href="#about">Go to About</a></p>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <section id="about">
+                    <h3>About</h3>
+                    <p>This is the About section.</p>
+                </section>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>HTML Revision Guide - Links and Navigation</p>
+        <a href="../index.html">Back to homepage</a>
+    </footer>
+</body>
+</html>
