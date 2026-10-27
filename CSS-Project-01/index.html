@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blob Creator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#">blob <span>:P</span></a>
+    </header>
+
+
+<main class="creator">
+    <section class="preview-section">
+        <div class="preview-heading">
+            <p class="eyebrow">YOUR CREATION</p>
+            <h1>Meet your blob.</h1>
+        </div>
+
+        <div class="preview-stage">
+            <svg
+                id="blob-preview"
+                class="blob-svg"
+                viewBox="0 0 300 300"
+                role="img"
+                aria-label="Your custom blob character"
+            >
+                <defs>
+                    <linearGradient id="blob-gradient" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#b8a5f5" />
+                        <stop offset="100%" stop-color="#6622d9" />
+                    </linearGradient>
+                </defs>
+
+                <path
+                    id="blob-body"
+                    d="M150 40 C220 35 265 90 255 155 C250 220 210 260 145 260 C80 260 40 215 45 150 C45 85 85 45 150 40 Z"
+                    fill="url(#blob-gradient)"
+                />
+
+                <g id="blob-face">
+                    <ellipse cx="115" cy="135" rx="9" ry="12" fill="#282438" />
+                    <ellipse cx="185" cy="135" rx="9" ry="12" fill="#282438" />
+                    <path
+                        d="M135 170 Q150 185 165 170"
+                        fill="none"
+                        stroke="#282438"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                    />
+                </g>
+            </svg>
+        </div>
+
+        
+    </section>
+
+    <section class="controls-section">
+        <div class="controls-heading">
+            <p class="eyebrow">CUSTOMISE</p>
+            
+        </div>
+
+        <div class="control-group">
+            <label for="body-colour">Body colour</label>
+            <input
+                type="color"
+                id="body-colour"
+                name="body-colour"
+                value="#a58bea"
+            >
+        </div>
+
+        <div class="control-group">
+            <label for="body-size">Body size</label>
+            <input
+                type="range"
+                id="body-size"
+                name="body-size"
+                min="70"
+                max="120"
+                value="100"
+            >
+        </div>
+
+        <div class="control-group">
+            <label for="body-roundness">Body roundness</label>
+            <input
+                type="range"
+                id="body-roundness"
+                name="body-roundness"
+                min="0"
+                max="100"
+                value="50"
+            >
+        </div>
+
+        <div class="control-group">
+            <label for="eye-size">Eye size</label>
+            <input
+                type="range"
+                id="eye-size"
+                name="eye-size"
+                min="4"
+                max="18"
+                value="9"
+            >
+        </div>
+
+        <div class="control-group">
+            <label for="eye-spacing">Eye spacing</label>
+            <input
+                type="range"
+                id="eye-spacing"
+                name="eye-spacing"
+                min="35"
+                max="100"
+                value="70"
+            >
+        </div>
+
+        <div class="control-group">
+            <label for="mouth-shape">Mouth shape</label>
+            <select id="mouth-shape" name="mouth-shape">
+                <option value="smile">Smile</option>
+                <option value="flat">Straight</option>
+                <option value="surprised">Surprised</option>
+            </select>
+        </div>
+
+        <button id="reset-button" type="button">Reset blob</button>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>blob :P</p>
+</footer>
+
+
+</body>
+</html>
